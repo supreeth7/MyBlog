@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>
+        Login Page
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script type="text/javascript">
+        function validate(form) {
+            if (form.userid.value == "supreeth" && form.pswrd.value == "admin") {
+                window.open('home.html')
+            }
+            else {
+                alert("Error Password or Username")/*displays error message*/
+            }
+        }
+    </script>
+</head>
+<header class="w3-container w3-center w3-padding-32">
+    <h1><b>Welcome To </b><span class="w3-tag"><b> MyBlog</b></span></h1>
+</header>
+<body>
+    <div class="login-page">
+        <div class="form">
+
+            <form name="login">
+                <input type="text" placeholder="username" name="userid">
+                <input type="text" placeholder="password" name="pswrd">
+                <button id="login" onclick="validate(this.form)">Login </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
